@@ -1,12 +1,14 @@
 This is a very simple frontend created to interact with Loot Creatures smart contract located here: https://etherscan.io/address/0xb89a71f1abe992dc71349fc782b393da2b6fb4c2#writeContract .
 
-This frontend is very dumb, it only researches for tokenIds that can still be used to mint new LootCreatures NFT for free + gas
-It invokes the method ownerOf() of the smartcontract, passing to it a looped id, and check the answer.
-Then it discriminate the ones that have no owners, and list all of them to the user into the frontend page.
+This frontend is very dumb, it only researches for tokenIds that can still be used to mint new LootCreatures NFT for free + gas.
 
+It invokes the method ownerOf() of the smartcontract. It loops an id from 1 to 16000 and pass it to the function, and wait for the answer.
+After that, it discriminates the answers saying that the token has no owner, and lists all of those into the frontend page to the user.
+
+The user can now take each of those id and use them to mint the nft interacting with the etherscan page.
 That's all.
 
-Could be a simple boilerplate to fork it and continue developing the minting call and other details.
+Could be a simple boilerplate to fork it and continue to develop it (for example it can be implemented the minting call directly in this app).
 
 
 PREREQUISITES:
