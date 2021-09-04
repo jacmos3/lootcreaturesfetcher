@@ -2,10 +2,12 @@ This is a very simple frontend created to interact with Loot Creatures smart con
 
 This frontend is very dumb, it only researches for tokenIds that can still be used to mint new LootCreatures NFT for free + gas.
 
-It invokes the method ownerOf() of the smartcontract. It loops an id from 1 to 16000 and pass it to the function, and wait for the answer.
-After that, it discriminates the answers saying that the token has no owner, and lists all of those into the frontend page to the user.
+It invokes the method ownerOf() of the LootCreatures smartcontract, then loops from 1 to 16000 passing the id to the function, and waits for the answers.
+
+For each answer saying the id has no owner, it lists it to the user.
 
 The user can now take each of those id and use them to mint the nft interacting with the etherscan page.
+
 That's all.
 
 Could be a simple boilerplate to fork it and continue to develop it (for example it can be implemented the minting call directly in this app).
