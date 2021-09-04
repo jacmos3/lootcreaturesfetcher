@@ -3,3 +3,4 @@
 node_modules
 .next
 .git
+ethereum/build/web3.js

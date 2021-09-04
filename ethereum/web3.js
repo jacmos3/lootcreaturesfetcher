@@ -8,9 +8,9 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   web3 = new Web3(window.ethereum);
 } else {
   // We are on the server *OR* the user is not running metamask
-  //replace ###########" with your token. register into infura.io to have one (it's free)
   const provider = new Web3.providers.HttpProvider(
-    "https://mainnet.infura.io/v3/###########"
+      //replace ###########" with your token. register into infura.io to have one (it's free)
+    "https://mainnet.infura.io/v3/8886e44c58d547f5bbbd81e0460296a2"
   );
   web3 = new Web3(provider);
 }
